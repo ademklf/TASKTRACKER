@@ -11,5 +11,5 @@ class TodoSerializer(serializers.ModelSerializer):
             'description',
             'is_done',
             'priority',
-            'created_data',
+            'created_date',
         )
