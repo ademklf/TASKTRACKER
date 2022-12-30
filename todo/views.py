@@ -9,7 +9,7 @@ from .models import Todo
 from .serializers import TodoSerializer 
 
 @api_view(["GET", "POST"])
-def Todo_list_create(request):
+def todo_list_create(request):
     if request.method == 'GET':
         todos = Todo.object.filter(is_done=False)
         serializer = TodoSerializer(todos, many=True)
